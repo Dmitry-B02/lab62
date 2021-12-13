@@ -39,7 +39,8 @@ class MainActivity: AppCompatActivity() {
     }
 
     private fun loadImage() {
-        executor = Executors.newFixedThreadPool(1)
+        val app = App()
+        executor = app.executor
         executor.execute {
             val newurl = URL("https://i.ibb.co/LCGjry8/Screenshot-20211121-231052-Gallery.jpg")
             val stream = newurl.openConnection().getInputStream()
