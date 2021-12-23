@@ -5,10 +5,8 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.example.image.databinding.ActivityMainBinding
 import java.util.concurrent.ExecutorService
-import java.util.concurrent.Executors
 import android.graphics.BitmapFactory
 import androidx.lifecycle.MutableLiveData
-import java.io.BufferedInputStream
 import java.net.URL
 
 
