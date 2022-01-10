@@ -8,7 +8,6 @@ import java.util.concurrent.ExecutorService
 import android.graphics.BitmapFactory
 import android.view.View
 import android.widget.Button
-import androidx.core.view.isVisible
 import androidx.lifecycle.MutableLiveData
 import java.net.URL
 
@@ -26,7 +25,6 @@ class MainActivity: AppCompatActivity() {
         download = findViewById(R.id.download)
 
         download.setOnClickListener {
-
             if (binding.image.drawable == null) {
                 loadImage()
             }
